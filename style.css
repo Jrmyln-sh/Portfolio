@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #F6F6F6;
+    --text-color: #212121;
+    --heading-color: #212121;
+    --paragraph-color: #393E46;
+    --font-family-header: 'Cabinet Grotesk', sans-serif;
+    --font-family-paragraph: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.navbar h3 {
+    color: var(--text-color);
+    font-family: var(--font-family-paragraph);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-family-paragraph);
+    font-weight: bold;
+}
