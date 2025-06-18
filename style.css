@@ -21,6 +21,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
+    position: fixed;
+    width: 97%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: #212121 1px solid;
 }
 
 .navbar h3 {
@@ -39,4 +45,77 @@ body {
     color: var(--text-color);
     font-family: var(--font-family-paragraph);
     font-weight: bold;
+}
+
+section {
+    height: 100vh;
+}
+
+#Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.home-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.profile-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: #F5F5F5 3px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.home-content h2 {
+    font-size: 2rem;
+    font-family: var(--font-family-header);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.home-content h4 {
+    font-size: 18px;
+    font-family: var(--font-family-header);
+    font-weight: 700;
+    color: var(--paragraph-color);
+    letter-spacing: 1px;
+}
+
+.home-content p {
+    font-size: 15px;
+    font-family: var(--font-family-paragraph);
+    font-weight: 500;
+    max-width: 700px;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5px;
+}
+
+.home-content a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-family-paragraph);
+    font-weight: bold;
+    cursor: pointer;
+    border: #212121 2px solid;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #FF6666;
+}
+
+.home-content a:hover {
+    transform: translateY(-0.33em);
+}
+
+.home-content a:active {
+    transform: translateY(0);
 }
