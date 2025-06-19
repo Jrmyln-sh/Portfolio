@@ -7,7 +7,7 @@
     --background-color: #F6F6F6;
     --text-color: #212121;
     --heading-color: #212121;
-    --paragraph-color: #393E46;
+    --paragraph-color: #888888;
     --font-family-header: 'Cabinet Grotesk', sans-serif;
     --font-family-paragraph: "Inter", sans-serif;
 }
@@ -27,6 +27,7 @@ body {
     left: 0;
     z-index: 1000;
     border-bottom: #212121 1px solid;
+    background-color: var(--background-color);
 }
 
 .navbar h3 {
@@ -98,6 +99,7 @@ section {
     margin-top: 1rem;
     margin-bottom: 2rem;
     letter-spacing: 0.5px;
+    color: var(--text-color);
 }
 
 .home-content a {
@@ -118,4 +120,69 @@ section {
 
 .home-content a:active {
     transform: translateY(0);
+}
+
+#Skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skill-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill-heading span {
+    color: #FF6666;
+}
+
+.skill-heading h2 {
+    color: var(--heading-color);
+    font-size: 30px;
+    font-weight: 800;
+    font-family: var(--font-family-header);
+    letter-spacing: 1.5px;
+}
+
+.skill-heading h4 {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font-family-paragraph);
+}
+
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-set {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+.skill-item {
+  width: 250px;
+  height: 180px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.icon i {
+  font-size: 2.5rem;
 }
