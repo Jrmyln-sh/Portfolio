@@ -184,5 +184,34 @@ section {
 }
 
 .icon i {
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+
+.skill-percent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.skill-percent span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.skill-bar {
+  width: 100px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color: #4e89ff; /* customize the color */
+  border-radius: 3px;
+  transition: width 0.6s ease;
 }
