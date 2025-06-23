@@ -12,11 +12,20 @@
     --font-family-paragraph: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background-color);
 }
 
-
+body.dark-theme {
+  --background-color: #121212;
+  --text-color: #eeeeee;
+  --heading-color: #ffffff;
+  --paragraph-color: #bbbbbb;
+}
 
 .navbar {
     display: flex;
@@ -273,6 +282,8 @@ section {
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
+  font-family: var(--font-family-paragraph);
+  font-weight: 500;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
