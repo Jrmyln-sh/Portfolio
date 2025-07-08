@@ -29,3 +29,10 @@ navLinks.querySelectorAll('a').forEach(link => {
     navLinks.classList.remove('active');
   });
 });
+
+const navClose = document.getElementById('nav-close');
+if (navClose) {
+  navClose.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
+}

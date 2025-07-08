@@ -33,9 +33,9 @@ body.dark-theme {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 0.5rem;
     position: fixed;
-    width: 97%;
+    width: 98%;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -64,7 +64,7 @@ body.dark-theme {
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 0.2rem;
 }
 
 #theme-toggle {
@@ -77,7 +77,8 @@ body.dark-theme {
 }
 
 section {
-    height: 100vh;
+  min-height: 100vh;
+  padding-top: 6rem;
 }
 
 #Home {
@@ -156,6 +157,7 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 2rem 1rem;
 }
 
 .skill-heading {
@@ -341,6 +343,10 @@ section {
   color: var(--text-color);
 }
 
+#nav-close {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .burger {
     display: block;
@@ -376,5 +382,96 @@ section {
 
   #theme-toggle {
     font-size: 2rem;
+  }
+
+  section {
+    min-height: unset;
+    padding-top: 6rem;
+  }
+
+  #Home {
+    padding-top: 7rem;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .home-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-content h4 {
+    font-size: 1rem;
+  }
+
+  .home-content p {
+    font-size: 0.8rem;
+  }
+
+  .navbar {
+    padding: 1.5rem 0.2rem !important;
+  }
+
+  .nav-right {
+    gap: 0.1rem !important;
+  }
+
+  .skill-set {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .skill-item {
+    width: 100%;
+    max-width: 340px;
+    min-height: 160px;
+    padding: 1.5rem 0.5rem;
+  }
+
+  .icon i {
+    font-size: 2.5rem;
+  }
+
+  .skill-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .skill-percent span {
+    font-size: 1.1rem;
+  }
+
+  .skill-bar {
+    width: 120px;
+    height: 12px;
+  }
+
+  #Skill {
+    padding: 6rem 1rem 2rem 1rem;
+  }
+
+  .nav-links #nav-close {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    z-index: 2100;
+  }
+
+  .nav-title h3 {
+    margin-left: 0.5rem;
+  }
+
+  .skill-heading h2 {
+    font-size: 2rem;
+  }
+
+  .skill-heading h4 {
+    font-size: 1rem;
   }
 }
