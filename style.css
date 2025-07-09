@@ -204,7 +204,7 @@ section {
 .skill-item {
   width: 250px;
   height: 180px;
-  background: #fff;
+  background: #F2F2F2;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   display: flex;
@@ -256,7 +256,7 @@ section {
 }
 
 .contact-content {
-  background: #fff;
+  background: #F2F2F2;
   border-radius: 12px;
   padding: 2rem;
 } 
@@ -270,7 +270,6 @@ section {
 .contact-content p {
   font-size: 1rem;
   font-family: var(--font-family-paragraph);
-  color: var(--text-color);
   margin-bottom: 2rem;
 }
 
@@ -289,7 +288,7 @@ section {
   border-radius: 8px;
   font-size: 1rem;
   font-family: var(--font-family-paragraph);
-  background: #fff;
+  background: #F2F2F2;
 }
 .contact-form textarea {
   min-height: 120px;
@@ -297,8 +296,8 @@ section {
 }
 
 .contact-form button {
-  background:  #AFDDFF;
-  color: var(--text-color);
+  background:  #1B56FD;
+  color: #ffffff;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -425,9 +424,9 @@ section {
   }
 
   .skill-item {
-    width: 100%;
+    width: 170%;
     max-width: 340px;
-    min-height: 160px;
+    min-height: 100px;
     padding: 1.5rem 0.5rem;
   }
 

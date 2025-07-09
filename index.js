@@ -36,3 +36,4 @@ if (navClose) {
     navLinks.classList.remove('active');
   });
 }
+

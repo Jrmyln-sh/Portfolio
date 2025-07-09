@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -12,17 +13,17 @@
 <body>
     <nav class="navbar">
         <div class="nav-title">
-            <h3>Jeremy's Portfolio</h3>
+            <h3 data-aos="fade-down">Jeremy's Portfolio</h3>
         </div>
         
         <div class="nav-right">
-            <a href="" id="theme-toggle" class="dark-theme"><i class="ri-moon-line" id="theme-icon"></i></a>
+            <a href="" id="theme-toggle" class="dark-theme" data-aos="zoom-in"><i class="ri-moon-line" id="theme-icon"></i></a>
             <ul class="nav-links">
                 <li><i class="ri-close-large-line" id="nav-close"></i></li>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Skill">Skill</a></li>
+                <li><a href="#Home" data-aos="zoom-in">Home</a></li>
+                <li><a href="#Skill" data-aos="zoom-in">Skill</a></li>
             <!-- <li><a href="#Projects">Projects</a></li> -->
-                <li><a href="#Contacts">Contacts</a></li>
+                <li><a href="#Contacts" data-aos="zoom-in">Contacts</a></li>
             </ul>
             <div class="burger" id="burger">
                 <i class="ri-menu-line"></i>
@@ -34,17 +35,17 @@
 
         <section id="Home">
             <div class="home-content">
-                <img src="images/Profile.jpg" alt="profile" class="profile-image">
+                <img src="images/Profile.jpg" alt="profile" class="profile-image" data-aos="fade-down">
 
-                <h2>Jeremy Malana</h2>
-                <h4>Aspiring Web Developer | Passionate about technology</h4>
-                <p>Hello, I'm Jeremy, a Information Technology student at BestLink College of the philippines.
+                <h2 data-aos="zoom-in">Jeremy Malana</h2>
+                <h4 data-aos="zoom-in">Aspiring Web Developer | Passionate about technology</h4>
+                <p data-aos="zoom-in">Hello, I'm Jeremy, a Information Technology student at BestLink College of the philippines.
                     I'm Deeply passionate about web development, particularly in the fields of Cybersecurity. I enjoy
                     tackling complex problems and creating innovative solutions. Explore my portfolio to see
                     some of my projects and learn more about my journey.
                 </p>
 
-                <a href="#Projects" class="btn">View My Projects</a>
+                <a href="#Projects" class="btn" data-aos="fade-up">View My Projects</a>
             </div>
         </section>
 
@@ -58,7 +59,7 @@
                 </div>
 
                 <div class="skill-set">
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="zoom-in">
                         <div class="icon">
                             <i class="ri-html5-line" style="color: #FF4F0F;"></i>
                         </div>
@@ -71,7 +72,7 @@
                         </div>
                     </div>
 
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="zoom-in">
                         <div class="icon">
                             <i class="ri-css3-line" style="color: #0065F8;"></i>
                         </div>
@@ -84,7 +85,7 @@
                         </div>
                     </div>
 
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="zoom-in">
                         <div class="icon">
                             <i class="ri-javascript-line" style="color: #FFD66B;"></i>
                         </div>
@@ -97,7 +98,7 @@
                         </div>
                     </div>
 
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="zoom-in">
                         <div class="icon">
                             <i class="ri-brush-line" style="color: #00CAFF;"></i>
                         </div>
@@ -110,7 +111,7 @@
                         </div>
                     </div>
 
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="zoom-in">
                         <div class="icon">
                             <i class="ri-github-line"></i>
                         </div>
@@ -123,7 +124,7 @@
                         </div>
                     </div>
 
-                    <div class="skill-item">
+                    <div class="skill-item" data-aos="zoom-in">
                         <div class="icon">
                             <i class="ri-java-fill" style="color: #FF6666;"></i>
                         </div>
@@ -144,7 +145,7 @@
         </section>
 -->
         <section id="Contacts">
-            <div class="contact-content">
+            <div class="contact-content" data-aos="zoom-in">
                 <h2>Get in Touch</h2>
                 <p>Have a question or want to work together?
                     Feel Free to reach out.
@@ -168,5 +169,10 @@
         </section>
     </main>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
